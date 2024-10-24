@@ -1,0 +1,21 @@
+*{
+    background-color: gray;
+}
+
+#container{
+    width: 800px;
+    border: rgb(255, 255, 255) solid 5px;
+    margin: 0px auto;
+}
+
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#page1{
+    background-color: coral;
+}
+
+#page2{
+       
+}
