@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 79, 0);
+}
+#container{
+    width: 800px;
+    border: rgb(255, 255, 255) solid 5px;
+    margin: 0px auto;
+}
+
+#nav{
+    background-color: gray;
+    height: 100px;
+}
+
+#content{
+    background-color: #fff;
+    height: 500px;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+    color: red;
+  }
+
+  /* visited link */
+a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+a:active {
+    color: blue;
+  }
+
