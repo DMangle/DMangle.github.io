@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: bisque;
+        }
+
+        #img{
+            width: 100%;
+            height: auto;
+        }
+
+        #flexparent{
+            display: flex;
+        }
+
+        main{
+            width: 1000px;
+            background-color: white;
+            margin: 0px auto;
+        } 
+
+        .topnav{
+            background-color: coral;
+            overflow: hidden;
+        }
+
+        .topnav a{
+            display: block;
+            float: left;
+            padding: 20px 30px;
+            color: darkblue;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover{
+            background-color: crimson;
+            overflow: hidden;
+        }
+
+        .topnav a:active{
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .fa-bars{
+            color:darkblue;
+        }
+
+        .topnav .icon{
+            display: none;
+        }
+
+        @media (max-width:600px){
+            
+            main{
+                width: 100%;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .topnav a{
+                display: none;
+            }
+
+            .topnav a.icon{
+                float: right;
+                display: block;
+            }
+
+            main{
+                width: 100%;
+            }
+
+            .topnav.responsive{
+                position: relative;
+            }
+
+            .topnav.responsive a.icon{
+                position: absolute;
+                right: 0;
+                left: 0;
+            }
+
+            .topnav.topnav.responsive a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <main>
+        <div class="topnav" id="respNav">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact" class="active">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript.:void(0)" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="flexparent">
+            <div>
+                <h1>Responsive Nav and Page Example</h1>
+            </div>
+
+            <img src="https://placehold.co/600x400"
+
+        </div>
+
+    </main>
+    <!--toggle between regular nav and bar-->
+
+    <script>//starts javascript
+        function myFunction(){
+        var x=document.getElementById("respNav");
+        if(x.className ==="topnav"){
+            x.className+= " responsive";
+        }else{
+            x.className="topnav"
+        }
+    }
+    </script>
+
+
+</body>
+</html>
