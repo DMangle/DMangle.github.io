@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(jpegmini_optimized/IMG_2548.jpg);
+}
+
+
+/*<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 700*/
+
+.josefin-slab-test {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#brownbar{
+  background-color: #65431D;
+}
+
+
+.topnav{
+  background-color: #65431D;
+  overflow: hidden;
+  margin: 0px auto;
+  width: 713px;
+}
+
+.topnav a{
+  display: block;
+  float: left;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+  background-color:rgb(89, 152, 26);
+  overflow: hidden;
+}
+
+.topnav a:active{
+  background-color: darkcyan;
+  color: white;
+}
+
+#box{
+  width: 713px;
+   /*get rid of this once all the content is in*/
+  background-color: #65431D;
+  margin: 20px auto;
+  padding: 30px 30px;
+  
+}
