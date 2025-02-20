@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse | Christian Creations</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        #searchInput {
+            width: 200px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+        .container > div {
+              width:40%;
+              margin-top: 20px;
+        }
+
+        #box{
+            width: 1280px;
+            height: 25px;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 1%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    </style>
+</head>
+<body>
+
+<img src="logo2.png" width="200px" class="center">
+        <div>
+            <div id="bar">
+                <div class="topnav josefin-sans-test" id="nav">
+                    <a href="/project1-dominic-mangle/index.php">Home</a></li>
+                    <a href="/project1-dominic-mangle/profile.php">Profile</a></li>
+                    <a href="/project1-dominic-mangle/browse.php">Browse</a></li>
+                    <a href="/project1-dominic-mangle/upload.php">Upload</a></li>
+                    <a href="/project1-dominic-mangle/sign.php">Sign Up/Log In</a></li>
+                </div>
+            </div>
+        </div>
+
+<div id="box">
+    </div>
+
+<div class="container">
+<input type="text" id="searchInput" placeholder="Search...">
+    <div id="results"></div>
+
+    <div class="josefin-sans-test">
+        <p align="right">Photography - Art - Graphics - More</p>
+    </div>
+</div>
+
+<div id="box">
+    </div>
+
+    <div class="row">
+    <div class="column" align="center">
+      <img src="photos/record.jpg" width="180px" height="180px">
+    </div>
+    <div class="column" align="center">
+      <img src="photos/Abstract.jpg" width="180px" height="180px">
+    </div>
+    <div class="column" align="center">
+      <img src="photos/sun.jpg" width="180px" height="180px">
+    </div>
+    <div class="column"align="center" >
+        <img src="photos/paris.jpg" width="180px" height="180px">
+    </div>
+    <div class="column" align="center">
+      <img src="photos/calendar.jpg" width="180px" height="180px">
+    </div>
+    </div>
+
+    <div id="box">
+    </div>
+
+    <div class="row">
+    <div class="column" align="center">
+      <img src="photos/poster.jpg" width="180px" height="180px">
+    </div>
+    <div class="column" align="center">
+      <img src="photos/moon.jpg" width="180px" height="180px">
+    </div>
+    <div class="column"align="center" >
+        <img src="photos/book2.jpg" width="180px" height="180px">
+    </div>
+    <div class="column" align="center">
+      <img src="photos/comp.png" width="180px" height="180px">
+    </div>
+    <div class="column"align="center" >
+        <img src="photos/family.jpg" width="180px" height="180px">
+    </div>
+  </div>
+</div>
+
+    <script>
+        // Example data to search through
+        const data = [
+            "Jesus",
+            "Art",
+            "Photos",
+            "Graphics",
+        ];
+    </script>
+</body>
+</html>
